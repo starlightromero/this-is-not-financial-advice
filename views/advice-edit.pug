@@ -1,0 +1,14 @@
+extends base
+
+block content
+  legend Edit Advice
+  form(action=`/${advice._id}?_method=PATCH`, method="POST")
+    .form-group
+      label Title
+      input(name="title" value=advice.title)     
+    .form-group
+      label Body
+      textarea(name="body")= advice.body
+    button(type="submit") Save
+  form(action=`/${advice._id}?_method=DELETE`, method="POST")
+    button(type="submit") Delete
