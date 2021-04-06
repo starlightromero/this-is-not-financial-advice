@@ -13,6 +13,10 @@ debug :
 reload:
 				docker-compose down && docker-compose -f docker-compose.dev.yml up
 				
+				
+build-prod:
+				docker-compose build --force-rm --no-cache
+				
 start-prod :
 				docker-compose up -d
 
