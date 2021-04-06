@@ -1,0 +1,9 @@
+README.md
+Makefile
+Dockerfile*
+docker-compose*
+.prettier*
+.eslint*
+.dockerignore
+node_modules/
+.git/
