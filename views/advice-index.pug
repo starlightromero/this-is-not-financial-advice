@@ -1,0 +1,8 @@
+extends base
+
+block content
+  each adv, index in advice
+    h4= adv.title
+    p= adv.body
+    p
+      a(href=`/${adv._id}`) View
