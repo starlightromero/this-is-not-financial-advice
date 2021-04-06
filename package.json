@@ -1,0 +1,50 @@
+{
+  "name": "this-is-not-financial-advice",
+  "version": "1.0.0",
+  "description": "Your one stop shop for not-financial advice",
+  "keywords": [
+    "finance",
+    "money",
+    "investing"
+  ],
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha ./tests/*.js",
+    "start:dev": "node app.js",
+    "start:prod": "nodemon app.js",
+    "format": "prettier --write \"{utils,routes,models,middleware,controllers}/*.js\" && prettier --write ./app.js",
+    "lint-files": "eslint --fix \"{utils,routes,models,middleware,controllers}/*.js\" && eslint --fix ./app.js",
+    "lint": "npm run format && npm run lint-files"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/starlightromero/this-is-not-financial-advice.git"
+  },
+  "author": "Starlight Romero",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/starlightromero/this-is-not-financial-advice/issues"
+  },
+  "homepage": "https://github.com/starlightromero/this-is-not-financial-advice#readme",
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "chai-http": "^4.3.0",
+    "eslint": "^7.23.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.3.1",
+    "mocha": "^8.3.2",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.7",
+    "prettier": "^2.2.1"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.12.3",
+    "pug": "^3.0.2"
+  }
+}
