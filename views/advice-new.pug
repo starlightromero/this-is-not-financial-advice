@@ -1,0 +1,12 @@
+extends base
+
+block content
+  legend New Advice
+  form(action="/", method="POST")
+    .form-group
+        label Title
+        input.form-control(name="title")
+    .form-group
+        label Body
+        textarea.form-control(name="body")   
+    button(type="submit") Save
