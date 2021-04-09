@@ -26,7 +26,7 @@ describe('Advice', function () {
 
   after(function (done) {
     Advice.deleteMany({
-      $or: [{ title: 'Close your savings account' }, { title: 'Test advice' }],
+      $or: [{ title: 'Close your savings account' }, { title: 'Test Advice' }],
     }).exec(function (err, advice) {
       if (err) {
         done(err)
